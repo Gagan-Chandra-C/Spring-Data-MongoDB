@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Employee Form</title>
+</head>
+<body>
+<h2>Employee Form</h2>
+<form action="/saveEmployee" method="post">
+<label>Employee ID:</label>
+<input type="text" name="id" required/><br/>
+
+<label>Employee Name:</label>
+<input type="text" name="name" required/><br/>
+
+<label>Employee Email:</label>
+<input type="email" name="email" required/><br/>
+
+<label>Location:</label>
+<input type="text" name="location" required/><br/>
+
+<button type="submit">Save Employee</button>
+</form>
+
+<h3>View Employees</h3>
+<a href="/employees/displayAll">Show All Employees</a>
+</body>
+</html>
